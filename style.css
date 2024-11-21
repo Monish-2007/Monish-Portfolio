@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Permanent+Marker&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px;
+    background-color: white;
+}
+.header .logoname {
+    display: flex;
+}
+.logoname h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.header img {
+    width: 100px;
+
+}
+.header .nav-bar ul{
+    display: flex;
+}
+.header .nav-bar ul li {
+    margin-left: 55px;
+    list-style-type: none;
+}
+.header .nav-bar  ul li a{
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 25px;
+    color: chocolate;
+    transition: all 0.1s ease;
+}
+.header .nav-bar ul li a:hover {
+    font-size: 26px;
+    border-bottom: 2px solid chocolate;
+} 
+.header .menu-icon i{
+    font-size: 30px;
+    display: none;
+}
+.home-section {
+    position: relative;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(
+        white,
+        rgb(10, 10, 10)
+    );
+    padding-bottom: 90px;
+}
+.home-section .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 450px;
+    justify-content: center;
+}
+.content h2,.content h3,.content h5 {
+    left: 0;
+    
+}
+.content h2 {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.content h3 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 5px;
+}
+.content h5 {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.btns {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.btns .explore,.btns .Contact{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+    background: radial-gradient(
+        white,
+        chocolate
+    );
+    transition:all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btns .explore:hover,.btns .Contact:hover {
+    background: radial-gradient(
+        white,
+        black
+    );
+    border: 2px solid white;
+}
+.pull-button {
+    justify-content: center;
+    display: block;
+    position: absolute;
+    top: 90%;
+}
+.pull-button a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 10px;
+    animation-iteration-count: infinite;
+    animation-name: size;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    cursor: pointer;
+    
+}
+
+#about-btn {
+    position: absolute;
+    display: block;
+    height: 62px;
+    width: 100%;
+    color: white;
+    bottom: 0;
+}
+#about {
+    text-align: center;
+    padding: 10px;
+    background:radial-gradient(
+        white,
+        red
+    );
+}
+#about h1 {
+    font-family: "Rowdies", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px 40px 40px;
+    align-items: center;
+    background: radial-gradient(
+        white,
+        rgb(5, 5, 5)
+    );
+    position: relative;
+}
+.about .profile-img {
+    padding: 20px;
+    border: 2px solid rgb(255, 254, 254);
+}
+.about .profile-img img {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+.about .profile-details {
+    padding: 10px 30px;
+    margin-left: 50px;
+    border: 3px solid rgb(248, 248, 248);
+    border-radius: 18px;
+    width: 500px;
+    height: 250px;
+}
+.profile-details h3 {
+    font-size: 30px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.profile-details p {
+    font-family: "Oleo Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(51, 2, 63);
+}
+#skill-btn {
+    display: block;
+    position: absolute;
+    height: 62px;
+    bottom: 0;
+}
+#skills {
+    text-align: center;
+    padding: 10px;
+    background: radial-gradient(
+        white,
+        yellow
+    );
+}
+#skills h1 {
+    font-family: "Rowdies", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.skills {
+    width: 1349px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: radial-gradient(
+        white,
+        black
+    );
+}
+.skills .cart {
+    width: 250px;
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+.skills .cart img {
+    width: 150px;
+    height: 110px;
+}
+.skills .cart h3 {
+    font-family: "Rowdies", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.skills .cart h5 {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(97, 6, 97);
+}
+
+#login-btn {
+    position: absolute;
+    bottom: 0;
+    height: 62px;
+}
+#login {
+    text-align: center;
+    background: radial-gradient(
+        white,
+        blue
+    );
+    padding: 10px;
+}
+
+#login h1 {
+    font-family: "Rowdies", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.login {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background: radial-gradient(
+        white,
+        black
+    );
+    position: relative;
+    padding-bottom: 62px;
+}
+
+.box {
+    width: 360px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    background: linear-gradient(
+        to top right,
+        rgb(0, 204, 255),
+        white,
+        rgb(0, 204, 255)
+    );
+}
+.box h1 {
+    text-align: center;
+    font-family: "Oleo Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+.box .ib {
+    padding: 5px;
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box .ib input {
+    width: 250px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+.box .ib i{
+    font-size: 25px;
+    color: white;
+}
+.fpass {
+    text-align: right;
+    margin-top: 10px;
+    font-family: "Oleo Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.fpass a{
+    letter-spacing: 1px;
+    color: black;
+}
+
+.bb {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    background-color: black;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+.bb:hover {
+    width: 80%;
+}
+#contact {
+    background: radial-gradient(
+        white,
+        green
+    );
+}
+#contact h1 {
+    font-family: "Rowdies", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    text-align: center;
+}
+.contact {
+    height: 300px;
+    background: radial-gradient(
+        white,
+        black
+    );
+    display: flex;
+    justify-content: space-around;
+}
+.img-name img {
+    padding: 40px 0px 0px 0px;
+}
+.img-name h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.details {
+    padding: 10px 30px;
+}
+.details .soc {
+    display: flex;
+    padding: 10px 20px;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+.details .soc i {
+    font-size: 40px;
+    color: white;
+}
+.details .soc a{
+    color: black;
+    text-decoration: none;
+    font-family: "Oleo Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.insta  {
+    background: linear-gradient(
+        to top right,
+        yellow,
+        rgb(255, 0, 221)
+    );
+}
+.whatsapp {
+    background-color: rgb(32, 255, 32);
+}
+.face {
+    background-color: rgb(14, 14, 250);
+}
+.twitter {
+    background-color: rgb(0, 153, 255);
+}
+.youtube {
+    background-color: red;
+}
+.gmail {
+    background-color: orange;
+}
