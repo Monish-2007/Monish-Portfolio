@@ -48,6 +48,7 @@
 .header .nav-bar ul li a:hover {
     font-size: 26px;
     border-bottom: 2px solid chocolate;
+    color: black;
 } 
 .header .menu-icon i{
     font-size: 30px;
